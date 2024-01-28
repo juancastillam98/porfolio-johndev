@@ -5,7 +5,7 @@ import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
 import {Textarea} from "@/components/ui/textarea";
 import {User2, MailIcon, Text, Send, MessageSquare} from "lucide-react";
-import axiosi from "axios";
+import axios from "axios";
 import {sendEmail} from "@/app/api/send/route";
 export const Form = () => {
 
@@ -22,8 +22,8 @@ export const Form = () => {
             subject,
             message,
         }
-        /*try {
-            const {data} = await axiosi.post("/api/send", infoUser)
+       /* try {
+            const {data} = await axios.post("/api/send", infoUser)
             console.log(data)
         } catch (error) {
             console.error(error)

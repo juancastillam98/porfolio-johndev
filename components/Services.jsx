@@ -8,9 +8,6 @@ import {
     CardTitle
 } from "@/components/ui/card";
 
-console.log("Desde services")
-console.log(servicesData);
-
 export const Services = () => {
     return (
         <section className={"mb-12 xl:mb-36"}>

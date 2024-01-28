@@ -1,6 +1,5 @@
 "use server"
 import nodemailer from 'nodemailer';
-import {data} from "autoprefixer";
 
 const transporter = nodemailer.createTransport({
 

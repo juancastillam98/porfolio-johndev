@@ -13,23 +13,23 @@ export const Header = () => {
     const [header, setHeader]=useState(false)
     const [nuevasClases, setNuevasClases]=useState(true)
     const pathname = usePathname();
+    console.log(pathname)
     useEffect(()=>{
         const scrollYPos = window.addEventListener("scroll", ()=>{
             window.scrollY > 50 ? setHeader(true) : setHeader(false);
             window.scrollY >850 ? setNuevasClases(false) : setNuevasClases(true);
         })
         return ()=>window.removeEventListener("scroll", scrollYPos)
-    })
+    },[])
     const headerClasses = `
     
     ${header 
         ? "py-4 bg-background shadow-lg dark:bg-accent" 
         : "py-6 dark:bg-transparent"} sticky top-0 z-30 transition-all
-    ${pathname === "/" && nuevasClases 
-    ? !document.documentElement.classList.contains("dark")
-        ? "bg-gradient-light"
+    ${pathname === "/" && nuevasClases
+        ? "bg-light-blue dark:gradient-dark"
         : " dark:bg-transparent"
-        :""}        
+        }        
     `;
 
     return (
