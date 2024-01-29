@@ -12,7 +12,7 @@ const infoData = [
     },
     {
         icon: <MailIcon size={20}/>,
-        text: "popUp"
+        text: "contact@johndev.dev",
     },
     {
         icon: <Calendar size={20}/>,
@@ -116,6 +116,7 @@ export const About = () => {
                                             >
                                                 <div className={"text-primary"}>{item.icon}</div>
                                                 <div>{item.text}</div>
+                                                <div>{item?.description}</div>
                                             </div>
                                         ))}
                                     </div>

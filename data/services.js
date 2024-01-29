@@ -1,4 +1,4 @@
-import {GanttChartSquare, Gem} from "lucide-react";
+import {GanttChartSquare, Gem, BarChartBig } from "lucide-react";
 export  const servicesData = [
     {
         icon: <GanttChartSquare size={72} strokeWidth={0.8}/>,
@@ -10,5 +10,10 @@ export  const servicesData = [
         icon: <Gem size={72} strokeWidth={0.8}/>,
         title: " Give visibility to your business",
         description: "I create a website for your business and make it visible on the Internet."
+    },
+    {
+        icon: <BarChartBig size={72} strokeWidth={0.8}/>,
+        title: " SEO",
+        description: "Get more customers being searched in Google"
     }
 ]
