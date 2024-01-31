@@ -12,7 +12,6 @@ import "swiper/css/pagination";
 
 export const Work = () => {
 
-
     return (
         <section className={"relative mb-12 xl:mb-48"}>
             <div className={"container mx-auto"}>
