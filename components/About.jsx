@@ -69,9 +69,10 @@ const skillData= [
         title: "Tools",
         data: [
             {imgPath: "/about/vscode.svg", name: "vscode"},
-            {imgPath: "/about/figma.svg", name: "figma"},
+            {imgPath: "/about/phpStorm.svg", name: "phpStorm"},
             {imgPath: "/about/wordpress.svg", name: "wordpress"},
-            {imgPath: "/about/notion.svg", name: "notion"},
+            {imgPath: "/about/nextjs.svg", name: "nextjs"},
+            {imgPath: "/about/macOS.svg", name: "mac OS"},
         ]
     }
 ]
@@ -95,7 +96,7 @@ export const About = () => {
                     {/*Tabs*/}
                     <div className={"flex-1"}>
                         <Tabs defaultValue={"personal"}>
-                            <TabsList className={"w-full grid lg:grid-cols-3 mb:mx-w-[520px] mb:border dark:border-none"}>
+                            <TabsList className={"w-full flex flex-col lg:flex-row justify-around mb:mx-w-[520px] mb:border dark:border-none"}>
                                 <TabsTrigger className={"w-[162px] mb:w-auto"} value={"personal"}>Personal Info</TabsTrigger>
                                 <TabsTrigger className={"w-[162px] mb:w-auto"} value={"qualifications"}>Qualifications</TabsTrigger>
                                 <TabsTrigger className={"w-[162px] mb:w-auto"} value={"skills"}>Skills</TabsTrigger>
@@ -202,7 +203,7 @@ export const About = () => {
                                         <div className={"mb-16"}>
                                             <h4 className={"text-xk font-semibold mb-2"}>Skills</h4>
                                             <div className={"border-b border-border mb-4"}></div>
-                                            <div>
+                                            <div className={"flex"}>
                                                 {getData(skillData, "Skills").data.map((item, index)=>{
                                                     const {name}=item;
                                                     return (
@@ -221,7 +222,7 @@ export const About = () => {
                                             <h4 className={"text-xl font-semibold mb-2 mb:text-left"}>Tools</h4>
                                         </div>
                                         <div className={"border-b border-border mb-4"}>
-                                            <div className={"flex gap-x-8 justify-center mb:justify-start"}>
+                                            <div className={"flex gap-x-8 justify-center mb:justify-start mb-5"}>
                                                 {getData(skillData, "Tools").data.map((item, index)=>{
                                                     const {imgPath, name}=item;
                                                     return (

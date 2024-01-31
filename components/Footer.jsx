@@ -2,7 +2,7 @@ import {Socials} from "@/components/Socials";
 export const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className={"bg-secondary py-12"}>
+        <footer className={"bg-secondary/40 py-12"}>
             <div className={"container mx-auto"}>
                 <div className={"flex flex-col items-center justify-between"}>
                     <Socials

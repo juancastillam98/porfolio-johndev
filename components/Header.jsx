@@ -24,10 +24,10 @@ export const Header = () => {
     const headerClasses = `
     
     ${header 
-        ? "py-4 bg-background shadow-lg dark:bg-accent" 
+        ? "py-4 bg-background shadow-lg dark:bg-background" 
         : "py-6 dark:bg-transparent"} sticky top-0 z-30 transition-all
     ${pathname === "/" && nuevasClases
-        ? "bg-light-blue dark:gradient-dark"
+        ? "bg-cyan-100 dark:gradient-dark"
         : " dark:bg-transparent"
         }        
     `;

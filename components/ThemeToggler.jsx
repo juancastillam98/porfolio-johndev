@@ -8,6 +8,7 @@ export const ThemeToggler = () => {
     return (
         <div>
             <Button
+                aria-label="Change color theme"
                 variant={"outline"}
                 size={"icon"}
                 onClick={()=>setTheme(theme ==="dark" ? "light" : "dark")}>
