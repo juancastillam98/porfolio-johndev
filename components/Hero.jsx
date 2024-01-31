@@ -34,7 +34,7 @@ export const Hero = () => {
                                 <Button variant={"secondary"} className={"flex gap-x-2"}>
                                     <Link
                                         href={"/files/CV_Juan_Castilla_Frontend_Developer.pdf"} target={"_blank"} download={"CV_Juan_Castilla_Frontend_Developer.pdf"}
-                                        className={"flex gap-x-2"}
+                                        className={"flex gap-x-2"} aria-label={"Download CV"}
                                     >
                                         Download CV <Download size={18}/>
                                     </Link>

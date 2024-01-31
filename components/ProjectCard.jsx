@@ -18,6 +18,7 @@ export const ProjectCard = ({project}) => {
                     <Image
                         src={project.image}
                         fill
+                        style={{objectFit:"contain", aspectRatio:"3/2 "}}
                         alt={` ${project.name} project's image`}
                         priority
                         className={"absolute bottom-0 shadow-2xl"}

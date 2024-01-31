@@ -97,7 +97,7 @@ export const About = () => {
                     <div className={"flex-1"}>
                         <Tabs defaultValue={"personal"}>
                             <TabsList className={"w-full flex flex-col lg:flex-row justify-around mb:mx-w-[520px] mb:border dark:border-none"}>
-                                <TabsTrigger className={"w-[162px] mb:w-auto"} value={"personal"}>Personal Info</TabsTrigger>
+                                <TabsTrigger className={"w-[162px] mb:w-auto "} value={"personal"}>Personal Info</TabsTrigger>
                                 <TabsTrigger className={"w-[162px] mb:w-auto"} value={"qualifications"}>Qualifications</TabsTrigger>
                                 <TabsTrigger className={"w-[162px] mb:w-auto"} value={"skills"}>Skills</TabsTrigger>
                             </TabsList>

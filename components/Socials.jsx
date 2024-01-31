@@ -18,7 +18,7 @@ export const Socials = ({containerStyles, inconsStyles}) => {
                 <Link
                     key={index}
                     href={icon.path}>
-                    <div className={`${inconsStyles}`}>
+                    <div className={`${inconsStyles}`} aria-label={`${icon.name}`}>
                         {icon.name}
                     </div>
                 </Link>
