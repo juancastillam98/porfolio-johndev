@@ -8,7 +8,7 @@ export const MobileNav = () => {
     return (
         <Sheet>
             <SheetTrigger asChild  aria-label="Menu">
-                <HamburgerMenuIcon className={"cursor-pointer h-[1.6rem] w-[1.6rem]"} />
+                <HamburgerMenuIcon aria-label="Display menu options" className={"cursor-pointer h-[1.6rem] w-[1.6rem]"} />
             </SheetTrigger>
             <SheetContent>
                 <div className={"flex flex-col items-center justify-between h-full py-8"}>

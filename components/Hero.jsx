@@ -9,7 +9,6 @@ import {
     RiArrowDownSLine
 } from "react-icons/ri";
 
-import {DevImg} from "@/components/DevImg";
 import {Socials} from "@/components/Socials";
 import {Badge} from "@/components/Badge";
 export const Hero = () => {

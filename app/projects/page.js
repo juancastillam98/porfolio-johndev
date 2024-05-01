@@ -5,7 +5,7 @@ import {Tabs, TabsList, TabsContent, TabsTrigger} from "@/components/ui/tabs";
 import {ProjectCard} from "@/components/ProjectCard";
 
 //remove categories duplicates
-console.log(projectData.map((item) =>item.category))
+//console.log(projectData.map((item) =>item.category))
 const uniqueCategories =[//I've add a new category called "all projects"
     "all projects",
     ...new Set(projectData.map((item) =>item.category))
@@ -13,6 +13,7 @@ const uniqueCategories =[//I've add a new category called "all projects"
 console.log(uniqueCategories)
 
 export default function Projects(){
+
     const [categories, setCategories] =useState(uniqueCategories)
     const [category, setCategory] = useState("all projects")
     const filterdProjects = projectData.filter((project)=>(

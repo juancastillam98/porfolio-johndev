@@ -3,7 +3,6 @@ import Image from "next/image"
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "../components/ui/tabs"
 
 import {User2, MailIcon, HomeIcon, PhoneCall, GraduationCap, Calendar, Briefcase} from "lucide-react";
-import {data} from "autoprefixer";
 
 const infoData = [
     {

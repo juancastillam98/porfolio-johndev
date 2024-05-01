@@ -1,5 +1,29 @@
 export const projectData = [
     {
+        image: "/work/proyecto-Tienda-de-Comida.avif",
+        category: "Next Js Strapi",
+        name: "Food store",
+        description: "food eCommerce",
+        link: "https://gorcery-store-git-main-juancastillam98s-projects.vercel.app/",
+        github: "https://github.com/juancastillam98/gorcery-store"
+    },
+    {
+        image: "/work/proyecto_indian_food_restaurant.avif",
+        category: "Next Js",
+        name: "Menu Indian Food Restaurant",
+        description: "menu of an Indian food restaurant",
+        link: "https://drag-n-drop-ts.vercel.app",
+        github: "https://github.com/juancastillam98/indian-food-restaurant"
+    },
+    {
+        image: "/work/proyecto_drag_n_drop_ts.avif",
+        category: "TypeScript",
+        name: "Drag'n Drop",
+        description: "Drag and drop in typscript",
+        link: "https://drag-n-drop-ts.vercel.app",
+        github: "https://github.com/juancastillam98/drag-n-drop-ts"
+    },
+    {
         image: "/work/Proyecto-NodeSend-Mern.avif",
         category: "MERN",
         name: "Dropzone",
